@@ -314,5 +314,27 @@
           "facing=west" : { "model": "createastral:block/cogwheel_skull", "y": 270 },
         }
       };
+    event
+      .create("createastral:supercritical_chamber_dummy", "basic")
+      .hardness(4)
+      .resistance(1200)
+      .texture("east", "techreborn:block/machines/tier2_machines/machine_east")
+      .texture("south", "techreborn:block/machines/tier2_machines/machine_back")
+      .texture("west", "techreborn:block/machines/tier2_machines/machine_west")
+      .texture("down", "techreborn:block/machines/tier2_machines/machine_bottom")
+      .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
+      .texture("north","createastral:block/supercritical_chamber_front_off")
+      .tagBlock("minecraft:mineable/pickaxe");
+    event
+      .create("createastral:supercritical_chamber_dummy_on", "basic")
+      .hardness(4)
+      .resistance(1200)
+      .texture("east", "techreborn:block/machines/tier2_machines/machine_east")
+      .texture("south", "techreborn:block/machines/tier2_machines/machine_back")
+      .texture("west", "techreborn:block/machines/tier2_machines/machine_west")
+      .texture("down", "techreborn:block/machines/tier2_machines/machine_bottom")
+      .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
+      .texture("north","createastral:block/supercritical_chamber_front_on")
+      .tagBlock("minecraft:mineable/pickaxe");
   });
 })();

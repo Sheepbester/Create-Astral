@@ -1,0 +1,120 @@
+{
+  "name": "custommachinery.createastral.supercritical_chamber",
+  "appearance": {
+    "block": "createastral:supercritical_chamber_dummy",
+    "running": {
+      "block": "createastral:supercritical_chamber_dummy_on",
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "createastral:textures/gui/scc/scc_gui.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
+    },
+    {
+      "x": 47,
+      "y": 104,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "fluidtank",
+      "x": 48,
+      "y": 46,
+      "type": "custommachinery:fluid",
+      "texture": "createastral:textures/gui/scc/scc_tank_slot.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "texture": "createastral:textures/gui/scc/scc_tank_glass.png",
+      "x": 48,
+      "y": 46,
+      "type": "custommachinery:texture",
+      "width": 32,
+      "height": 32,
+      "priority": -1
+    },
+    {
+      "id": "top_slot",
+      "x": 88,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "bottom_slot",
+      "x": 88,
+      "y": 70,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output_slot",
+      "x": 186,
+      "y": 54,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 8,
+      "y": 34,
+      "width": 16,
+      "height": 56,
+      "type": "custommachinery:energy"
+    },
+    {
+      "emptyTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_empty.png",
+      "filledTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_filled.png",
+      "x": 122,
+      "y": 46,
+      "type": "custommachinery:progress",
+      "height": 32,
+      "width": 48
+    },
+    {
+      "x": 232,
+      "y": 8,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "custommachinery.createastral.supercritical_chamber.text",
+      "x": 9,
+      "y": 11,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 405000,
+      "id": "fluidtank",
+      "maxInput": 666,
+      "maxOutput": 666,
+      "filter": ["minecraft:lava", "kubejs:hellfire", "kubejs:supercooled_water", "ad_astra:cryo_fuel"],
+      "whitelist": true
+    },
+    {
+      "capacity": 100000,
+      "maxInput": 50000,
+      "maxOutput": 0,
+      "type": "custommachinery:energy"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "top_slot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "bottom_slot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "output_slot",
+      "mode": "output"
+    }
+  ]
+}

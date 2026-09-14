@@ -50,8 +50,10 @@
   "custommachinery.createastral.stone_growth_chamber": "Stone Growth Chamber",
   "custommachinery.createastral.stone_growth_chamber.text": "Stone Growth Chamber",
   "custommachinery.createastral.washer": "Washer",
+  "custommachinery.createastral.supercritical_chamber": "Supercritical Chamber",
+  "custommachinery.createastral.supercritical_chamber.text": "Supercritical Chamber",
 
-  "comment_2": "tooltips",
+  "comment_2",: "tooltips",
 
   "tooltip.kubejs.broken_fire_resistant_fragile_sheet_block": "Throw lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
   "tooltip.kubejs.fire_resistant_fragile_sheet_block": "Throw lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
