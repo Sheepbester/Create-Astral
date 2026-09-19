@@ -53,7 +53,7 @@
   "custommachinery.createastral.supercritical_chamber": "Supercritical Chamber",
   "custommachinery.createastral.supercritical_chamber.text": "Supercritical Chamber",
 
-  "comment_2",: "tooltips",
+  "comment_2": "tooltips",
 
   "tooltip.kubejs.broken_fire_resistant_fragile_sheet_block": "Throw lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
   "tooltip.kubejs.fire_resistant_fragile_sheet_block": "Throw lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
@@ -241,6 +241,12 @@
   "item.createastral.olivine_sheet": "Olivine Sheet",
   "item.createastral.fragile_sheet": "Fragile Sheet",
   "item.createastral.broken_fragile_sheet": "Broken Fragile Sheet",
+
+  "item.createastral.aerogel": "Aerogel",
+  "item.createastral.hydrogel": "Hydrogel",
+  "item.createastral.broken_aerogel": "Broken Aerogel",
+
+  "item.createastral.powdered_dry_ice": "Powdered Dry Ice",
 
   "item.createastral.golden_pin": "Golden Pin",
   "item.createastral.calorite_pin": "Calorite Pin",

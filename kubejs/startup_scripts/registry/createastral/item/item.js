@@ -132,6 +132,11 @@
     event.create("createastral:sturdy_chestplate", "chestplate").tier("sturdyarmor");
     event.create("createastral:sturdy_leggings", "leggings").tier("sturdyarmor");
     event.create("createastral:sturdy_boots", "boots").tier("sturdyarmor");
+    //Aerogel Suit [SCRAPPED]//
+    // event.create("createastral:aerogel_space_helmet", "helmet").tier("aerogelarmor");
+    // event.create("createastral:aerogel_space_suit", "chestplate").tier("aerogelarmor");
+    // event.create("createastral:aerogel_space_pants", "leggings").tier("aerogelarmor");
+    // event.create("createastral:aerogel_space_boots", "boots").tier("aerogelarmor");
     //Other Items//
     event.create("createastral:orcane").displayName("Information / General Progression").glow(true);
     event.create("createastral:astral_singularity").food((food) => {
@@ -283,5 +288,10 @@
         east: "createastral:item/incomplete_shadow_steel_casing",
       },
     });
+    event.create("createastral:hydrogel");
+    event.create("createastral:aerogel");
+    event.create("createastral:broken_aerogel");
+
+    event.create("createastral:powdered_dry_ice")
   });
 })();

@@ -336,5 +336,12 @@
       .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
       .texture("north","createastral:block/supercritical_chamber_front_on")
       .tagBlock("minecraft:mineable/pickaxe");
+    event
+      .create("createastral:dry_ice", "basic")
+      .hardness(0.3)
+      .resistance(0.3)
+      .textureAll("createastral:block/dry_ice")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .material("snow")
   });
 })();

@@ -31,6 +31,15 @@
       "height": 32
     },
     {
+      "id": "refrigeranttank",
+      "x": 224,
+      "y": 32,
+      "type": "custommachinery:fluid",
+      "texture": "createastral:textures/gui/scc/scc_tank_slot.png",
+      "width": 32,
+      "height": 64
+    },
+    {
       "texture": "createastral:textures/gui/scc/scc_tank_glass.png",
       "x": 48,
       "y": 46,
@@ -40,15 +49,18 @@
       "priority": -1
     },
     {
-      "id": "top_slot",
-      "x": 88,
-      "y": 38,
-      "type": "custommachinery:slot"
+      "texture": "createastral:textures/gui/scc/scc_refrigerant_tank_glass.png",
+      "x": 224,
+      "y": 32,
+      "type": "custommachinery:texture",
+      "width": 32,
+      "height": 64,
+      "priority": -1
     },
     {
-      "id": "bottom_slot",
+      "id": "input_slot",
       "x": 88,
-      "y": 70,
+      "y": 54,
       "type": "custommachinery:slot"
     },
     {
@@ -59,7 +71,7 @@
     },
     {
       "x": 8,
-      "y": 34,
+      "y": 36,
       "width": 16,
       "height": 56,
       "type": "custommachinery:energy"
@@ -88,27 +100,31 @@
   "components": [
     {
       "type": "custommachinery:fluid",
-      "capacity": 405000,
-      "id": "fluidtank",
-      "maxInput": 666,
-      "maxOutput": 666,
-      "filter": ["minecraft:lava", "kubejs:hellfire", "kubejs:supercooled_water", "ad_astra:cryo_fuel"],
+      "capacity": 486000,
+      "id": "refrigeranttank",
+      "maxInput": 1000,
+      "maxOutput": 0,
+      "filter": ["minecraft:lava", "kubejs:hellfire", "techreborn:nitrogen", "ad_astra:cryo_fuel"],
       "whitelist": true
     },
     {
-      "capacity": 100000,
-      "maxInput": 50000,
+      "type": "custommachinery:fluid",
+      "capacity": 243000,
+      "id": "fluidtank",
+      "maxInput": 1000,
+      "maxOutput": 0,
+      "filter": ["kubejs:carbon_dioxide"],
+      "whitelist": true
+    },
+    {
+      "capacity": 25000,
+      "maxInput": 1000,
       "maxOutput": 0,
       "type": "custommachinery:energy"
     },
     {
       "type": "custommachinery:item",
-      "id": "top_slot",
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "id": "bottom_slot",
+      "id": "input_slot",
       "mode": "input"
     },
     {

@@ -199,7 +199,21 @@
       .stillTexture("tconstruct:block/fluid/molten/still")
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .displayName("Miner Pale Ale");
-    event.create("supercooled_water").thinTexture(0x4afff0).bucketColor(0x4afff0).displayName("Supercooled Water");
+    event
+      .create("supercooled_water")
+      .thickTexture(0x4afff0)
+      .bucketColor(0x4afff0)
+      .stillTexture("tconstruct:block/fluid/molten/still")
+      .flowingTexture("tconstruct:block/fluid/molten/flowing")
+      .displayName("Supercooled Water");
+
+    event
+      .create("carbon_dioxide")
+      .thickTexture(0xffffff)
+      .bucketColor(0xffffff)
+      .stillTexture("tconstruct:block/fluid/molten/still")
+      .flowingTexture("tconstruct:block/fluid/molten/flowing")
+      .displayName("Carbon Dioxide");
   });
   /** @param {Registry.Fluid} event  */
   function liquidFoodGen(event) {

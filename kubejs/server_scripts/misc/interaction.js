@@ -80,6 +80,12 @@
     if (event.level.getBlock(x, y - 2, z).id == "createastral:swift_andesite") {
       player.potionEffects.add("minecraft:speed", 20, 0, false, false);
     }
+    if (event.level.getBlock(x, y, z).id == "kubejs:carbon_dioxide") {
+      player.potionEffects.add("astraladditions:frost", 20, 0, false, false);
+    }
+    if (event.level.getBlock(x, y, z).id == "techreborn:nitrogen") {
+      player.potionEffects.add("astraladditions:frost", 20, 0, false, false);
+    }
     if (event.level.getBlock(x, y - 1, z).id == "kubejs:fragile_sheet_block") {
       Utils.server.runCommandSilent(
         `particle minecraft:block minecraft:magenta_concrete_powder ${player.x} ${player.y - 1} ${
@@ -352,6 +358,14 @@
           entity.item = "kubejs:broken_fire_resistant_fragile_sheet_block";
           server.runCommandSilent(
             `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
+          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
+          break;
+
+        case "createastral:aerogel":
+          entity.item = "createastral:broken_aerogel";
+          server.runCommandSilent(
+            `execute in ${dim} run particle minecraft:block minecraft:light_blue_concrete_powder ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
           server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;

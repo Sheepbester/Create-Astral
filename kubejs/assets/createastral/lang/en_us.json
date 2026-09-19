@@ -242,6 +242,12 @@
   "item.createastral.fragile_sheet": "Fragile Sheet",
   "item.createastral.broken_fragile_sheet": "Broken Fragile Sheet",
 
+  "item.createastral.aerogel": "Aerogel",
+  "item.createastral.hydrogel": "Hydrogel",
+  "item.createastral.broken_aerogel": "Broken Aerogel",
+
+  "item.createastral.powdered_dry_ice": "Powdered Dry Ice",
+
   "item.createastral.golden_pin": "Golden Pin",
   "item.createastral.calorite_pin": "Calorite Pin",
   "item.createastral.martian_clump": "Martian Clump",
